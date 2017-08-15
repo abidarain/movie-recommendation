@@ -48,22 +48,27 @@
 	    <label for="title">Title</label>
 	    <input type="text" class="form-control" id="title" ng-model="vm.change.title">
 			<h2>{{vm.movie.title}}</h2>
+            <span ng-show="vm.change.title.$error.required">Title is required.</span>
 	  </div>
 	  <div class='form-group'>
 	    <label for="date">Release date</label>
 	    <input type="text" class="form-control" id="date" ng-model="vm.change.date">
+            <span ng-show="vm.change.date.$error.required">Release date is required.</span>
 	  </div>
 	  <div class='form-group'>
 	    <label for="duration">Duration</label>
 	    <input type="text" class="form-control" id="duration" ng-model="vm.change.duration">
+            <span ng-show="vm.change.duration.$error.required">Title is required.</span>
 	  </div>
 	  <div class='form-group'>
 	    <label for="genre">Genre</label>
 	    <input type="text" class="form-control" id="genre" ng-model="vm.change.genre">
+            <span ng-show="vm.change.genre.$error.required">Title is required.</span>
 	  </div>
 	  <div class='form-group'>
 	    <label for="synopsis">Synopsis</label>
 	    <input type="text" class="form-control" id="synopsis" ng-model="vm.change.synopsis">
+            <span ng-show="vm.change.synopsis.$error.required">Title is required.</span>
 	  </div>
 
 	  <input ng-click="vm.save()" class="btn btn-info" value="SAVE">
